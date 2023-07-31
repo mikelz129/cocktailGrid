@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: antiquewhite;
+    font-size: 36pt;
+    background-color: darkblue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: (12, 1fr);
+}
+
+.header {
+    display: inherit;
+    border: 1px solid red;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.cell {
+    grid-column-start: span 1;
+}
